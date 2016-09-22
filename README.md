@@ -85,7 +85,7 @@ Example:
 - `hr` (`<View>`)
 - `heading` (`<Text>`) - Also `heading1` through `heading6`
 - `inlineCode` (`<Text>`)
-- `image` (`<Image>`) - Supports `.jpg`, `.png`, `.gif`, etc
+- `image` (`<Image>`) - Supports `.jpg`, `.png`, `.gif`, etc. Images can be local or remote.
 - `link` (`Text`)
 - `list` (`<View>`) - Also `listItem` (`<View>`), `listItemBullet` (`<Text>`), `listItemNumber` (`<Text>`) and `listItemText` (`<Text>`)
 - `mailTo` (`Text`)
