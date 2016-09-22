@@ -74,7 +74,7 @@ export default (styles) => ({
   },
   image: {
     react: (node, output, state) => {
-      const source = (node.target =~ /^http/) ? { uri: node.target } : require(node.target)
+      const source = (node.target.match(/^http/) ? { uri: node.target } : require(node.target)
       return createElement(Image, {
         key: state.key,
         source,
