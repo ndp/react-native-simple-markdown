@@ -74,9 +74,10 @@ export default (styles) => ({
   },
   image: {
     react: (node, output, state) => {
+      const source = (node.target =~ /^http/) ? { uri: node.target } : require(node.target)
       return createElement(Image, {
         key: state.key,
-        source: { uri: node.target },
+        source,
         style: node.target.match(/youtube/) ? styles.video : styles.image
       })
     }
